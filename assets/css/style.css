@@ -34,12 +34,6 @@ button {
   margin: 0 auto;
 }
 
-/* HIDDEN  */
-
-div .hidden {
-  display: none;
-}
-
 /* ------------------------- */
 /* HEADER */
 /* ------------------------- */
@@ -444,14 +438,20 @@ footer img {
   margin-right: 10px;
 }
 
+/* HIDDEN  */
+
+div .hidden {
+  display: none;
+}
+
 /* QUERIES */
 
 @media (max-width: 1024px) {
-  .hidden {
-    display: inline;
-  }
   .container {
     width: 100%;
+  }
+  div .hidden {
+    display: initial;
   }
   header img {
     width: 169px;
