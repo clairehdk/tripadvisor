@@ -34,6 +34,12 @@ button {
   margin: 0 auto;
 }
 
+/* HIDDEN  */
+
+div .hidden {
+  display: none;
+}
+
 /* ------------------------- */
 /* HEADER */
 /* ------------------------- */
@@ -438,8 +444,42 @@ footer img {
   margin-right: 10px;
 }
 
-/* HIDDEN  */
+/* QUERIES */
 
-.hidden {
-  display: none;
+@media (max-width: 1024px) {
+  .hidden {
+    display: inline;
+  }
+  .container {
+    width: 100%;
+  }
+  header img {
+    width: 169px;
+  }
+  header nav span {
+    display: none;
+  }
+  .menu {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 769px) {
+  header {
+    display: flex;
+    justify-content: space-;
+  }
+  header img {
+    width: 169px;
+    text-align: center;
+  }
+  header input {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
 }
